@@ -5,24 +5,45 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Hiragino Kaku Gothic ProN";
-  }
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont,
+                "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    color: #333;
+    letter-spacing: 1.5px;
+    line-height: 1.75;
+
+}
 
 a {
     text-decoration: none;
   }
 
+h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 35px;
+  font-weight: normal;
+}
+
 .top-wrapper {
     padding: 180px 0 100px 0;
     background-image: url(./img/top.png);
     background-size: cover;
-    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.900);
     text-align: center;
   }
 
 .top-wrapper h1 {
     opacity: 0.7;
-    font-size: 45px;
+    font-size: 70px;
     letter-spacing: 5px;
   }
   
@@ -68,21 +89,28 @@ header {
     position :fixed;
     top: 0;
     z-index: 10;
+    position: fixed;
   }
 
 .header-left {
     float: left;
   }
+
+.header-left > p {
+  font-size: 25px;
+  margin: 10px;
+  color:rgba(0, 0, 0, 0.900)
+}
   
 .header-right {
     float: right;
-    margin-right: -25px;
+    margin-right: 25px;
   }
 
 .header-right a {
     line-height: 65px;
     padding: 0 25px;
-    color: white;
+    color: rgb(0, 0, 0);
     display: block;
     float: left;
     transition: all 0.5s;
@@ -113,7 +141,7 @@ header {
   display: inline-block;
   padding-left: 10%;
   padding-right: 10%;
-    list-style-type: none;
+  list-style-type: none;
 	-webkit-transition: all 0.2s;
             transition: all 0.2s;
 }
@@ -173,7 +201,6 @@ main {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-  background-color: rgba(241, 253, 255, 0.9);
 }
 
 #introduction {
@@ -181,6 +208,8 @@ main {
   width: 60%;
   margin-left: 20%;
   margin-right: 20%;
+  margin-top: 10%;
+  margin-bottom: 10%;
   
 }
 
@@ -199,3 +228,21 @@ main {
   text-align: center;
 }
 
+#activity {
+  height: 100%;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.activity {
+  margin: 5% 10%;
+}
+
+.activity h2 {
+  text-align: center;
+}
+
+.activity ul {
+  list-style-type: none;
+}
