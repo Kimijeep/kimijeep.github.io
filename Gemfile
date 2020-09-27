@@ -1,0 +1,1 @@
+gem "haml-rails", "~> 2.0"
